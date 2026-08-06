@@ -1,0 +1,12 @@
+*{box-sizing:border-box;font-family:Segoe UI, Roboto, 'Noto Sans KR', sans-serif}
+html,body{height:100%}
+body{background: linear-gradient(135deg,#89f7fe 0%,#66a6ff 100%);margin:0;color:#06213a}
+.site-header{display:flex;justify-content:space-between;align-items:center;padding:16px 24px;background:rgba(255,255,255,0.08);backdrop-filter:blur(6px);border-bottom:1px solid rgba(255,255,255,0.12)}
+.brand{font-weight:700;font-size:18px}
+.header-actions button{margin-left:8px;padding:8px 12px;border-radius:8px;border:none;cursor:pointer}
+.header-actions .ghost{background:transparent;border:1px solid rgba(0,0,0,0.08)}
+.site-main{max-width:980px;margin:28px auto;padding:0 20px}
+.hero{background:rgba(255,255,255,0.08);padding:20px;border-radius:12px;margin-bottom:16px;box-shadow:0 6px 20px rgba(31,38,135,0.08)}
+.content{background:rgba(255,255,255,0.06);padding:18px;border-radius:10px}
+.site-footer{text-align:center;padding:14px;margin-top:20px;color:rgba(0,0,0,0.6)}
+@media(max-width:600px){.site-header{flex-direction:column;gap:12px}.site-main{margin:16px 12px}}

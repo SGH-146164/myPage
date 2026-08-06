@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>로그인</title>
+  <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+  <main class="container">
+    <form id="loginForm" novalidate>
+      <h1>로그인</h1>
+      <label>아이디<input type="text" name="username" id="username" required></label>
+      <label>비밀번호<div class="pw-wrap">
+        <input type="password" name="password" id="password" required>
+        <button type="button" class="toggle" data-target="password" aria-label="비밀번호 보기">👁️</button>
+      </div></label>
+      <button type="submit">로그인</button>
+      <p style="text-align:center;margin-top:10px;color:rgba(255,255,255,0.85)">아직 계정이 없나요? <a href="signup.html">회원가입</a></p>
+    </form>
+  </main>
+  <script src="../js/login.js"></script>
+</body>
+</html>

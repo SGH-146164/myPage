@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>회원가입</title>
+  <link rel="stylesheet" href="../css/signup.css">
+</head>
+<body>
+  <main class="container">
+    <form id="signupForm" novalidate>
+      <h1>회원가입</h1>
+
+      <label>이름*<input type="text" name="name" id="name" required></label>
+
+      <label>아이디*<input type="text" name="username" id="username" required></label>
+
+      <label>비밀번호*<div class="pw-wrap">
+        <input type="password" name="password" id="password" required>
+        <button type="button" class="toggle" data-target="password" aria-label="비밀번호 보기">👁️</button>
+      </div></label>
+
+      <label>비밀번호 확인*<div class="pw-wrap">
+        <input type="password" name="confirm" id="confirm" required>
+        <button type="button" class="toggle" data-target="confirm" aria-label="비밀번호 확인 보기">👁️</button>
+      </div></label>
+
+      <label>닉네임<input type="text" name="nickname" id="nickname"></label>
+
+      <label>핸드폰 번호<input type="tel" name="phone" id="phone"></label>
+
+      <label>주소<input type="text" name="address" id="address"></label>
+
+      <fieldset class="terms">
+        <label><input type="checkbox" id="agreeAll"> 전체 동의</label>
+        <label><input type="checkbox" class="term required" id="term1"> 개인정보 처리방침 (필수)</label>
+        <label><input type="checkbox" class="term required" id="term2"> 서비스 이용약관 (필수)</label>
+        <label><input type="checkbox" class="term required" id="term3"> 수집동의 (필수)</label>
+      </fieldset>
+
+      <button type="submit">가입하기</button>
+    </form>
+  </main>
+  <script src="../js/signup.js"></script>
+</body>
+</html>
