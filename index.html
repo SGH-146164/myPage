@@ -1,32 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>나의 웹페이지</title>
-  <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="brand">나의 웹페이지</div>
-    <div id="headerActions" class="header-actions"></div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Webpage</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Welcome to my world</p>
+          <h1>나만의 웹페이지</h1>
+          <p class="intro">
+            로그인, 회원가입, 메인 페이지까지 이어지는 개인형 웹사이트입니다.
+          </p>
+        </div>
+        <div class="hero-actions">
+          <a href="html/login.html" class="btn btn-primary">로그인</a>
+          <a href="html/signup.html" class="btn btn-secondary">회원가입</a>
+        </div>
+      </header>
 
-  <main class="site-main">
-    <section class="hero">
-      <h2>나의 웹페이지에 오신 것을 환영합니다</h2>
-      <p>개인화된 공간에서 정보를 확인하세요.</p>
-    </section>
-    <section class="content">
-      <h3>내 정보</h3>
-      <p id="userInfo">로그인 정보를 불러오는 중입니다...</p>
-    </section>
-  </main>
+      <main class="content">
+        <section class="panel">
+          <h2>About Me</h2>
+          <p>이 페이지는 나만의 스타일로 구성된 포트폴리오형 웹페이지입니다.</p>
+        </section>
 
-  <footer class="site-footer">
-    <p>© 2026 나의 웹페이지</p>
-  </footer>
-
-  <script src="./js/main.js"></script>
-</body>
+        <section class="panel">
+          <h2>What I Can Do</h2>
+          <ul>
+            <li>반응형 레이아웃 구성</li>
+            <li>로그인/회원가입 흐름 구현</li>
+            <li>글라스 스타일 UI 적용</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
